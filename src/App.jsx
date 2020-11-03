@@ -1,16 +1,20 @@
-
 //Components
-import Card from "./components/Card";
-
+import Header from "./components/organisms/Header";
+import Home from "./components/templates/HomePage";
 // Other imports
 import "./css/style.css";
 import information from "./information.json";
+
 function App() {
+
+  {/* console.log('hello: '+{Cards});
+ for (const i=0; i< information.length;i++) {
+    Cards.push(<Card data={information[i]})
+  */  }
+
   return (
     <div className="App">
-      
-     <h1>Video Site</h1>
-     <Card data ={information[0]}/>
+      <Home information ={information}/>
     </div>
   );
 }

@@ -1,11 +1,10 @@
 import React from "react";
 
 export default function Card({data}) {
-    console.log("Card Component");
-    console.log(data);
+    {/*console.log("Card Component");
+    console.log(data); */}
      // Here is where we do the break down the data
   const {
-    id,
     title,
     description,
     channelName,
