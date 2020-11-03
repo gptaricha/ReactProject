@@ -1,5 +1,4 @@
 import React from "react";
-
 export default function Card({data}) {
     {/*console.log("Card Component");
     console.log(data); */}
@@ -9,7 +8,6 @@ export default function Card({data}) {
     description,
     channelName,
     channelThumb,
-    suscribers,
     views,
     videoThumb,
   } = data;

@@ -1,5 +1,4 @@
 //Components
-import Header from "./components/organisms/Header";
 import Home from "./components/templates/HomePage";
 // Other imports
 import "./css/style.css";

@@ -8,7 +8,7 @@
   max-width: 320px;
 }
 
-.HomePage .container > .title {
+.HomePage .container .title {
   padding-left: 8px;
   margin-bottom: 16px;
   font-size: 20px;
