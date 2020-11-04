@@ -1,10 +1,9 @@
 import React from "react";
-
 //Media Assets
 import logoLight from "../../assets/images/logo-light.svg";
 
 export default function Header() {
-    return (<header className="header">
+    return (<header className="Header">
        <a href="#">
            <img src={logoLight} alt="Logo" />
        </a>
