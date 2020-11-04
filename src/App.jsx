@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Switch, Route }from "react-router-dom";
 import HomePage from "./components/templates/HomePage";
 
 //Components
-import Home from "./components/templates/HomePage";
 import VideoPage from "./components/templates/VidePage";
 // Other imports
 import "./css/style.css";
