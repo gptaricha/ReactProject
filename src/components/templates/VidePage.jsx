@@ -1,6 +1,6 @@
 // React core
-import React from "react";
-
+import React from "react";  // main package imported directly
+import { Link } from "react-router-dom"; //additional functionality are in curly braces
 // Components
 import Header from "../organisms/Header";
 
@@ -8,7 +8,7 @@ export default function VideoPage({ match, information }) {
    console.log("Video Page component");
    console.log("match", match);
    console.log("match:  ", match.params.id);
-   const matchId = match.params.id
+   const matchId = match.params.id-1;
     const {
         videoURL,
         title,
@@ -49,9 +49,9 @@ export default function VideoPage({ match, information }) {
                     </div>
                 </div>
                 < hr/>
-                <a className="button" href="#">
+                <Link className="button" to="/">
                 Back to home
-                </a>
+                </Link>
             </div>
         </div>
     );

@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 export default function Card({data}) {
     {/*console.log("Card Component");
     console.log(data); */}
      // Here is where we do the break down the data
   const {
+      id,
     title,
     description,
     channelName,
@@ -14,9 +17,9 @@ export default function Card({data}) {
 
   return (
       <article className ="card">
-          <a href ="#" >
+          <Link to ={`video/${id}`} >
               <img className ="thumbnail" src={videoThumb} alt ={description}></img>
-          </a>
+          </Link>
           <aside className="meta-data">
               <div className="left">
                   <img
