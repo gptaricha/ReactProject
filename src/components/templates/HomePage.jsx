@@ -2,6 +2,7 @@ import React from "react";
 //import Components
 import Card from "../molecules/Card";
 import Header from "../organisms/Header"
+import VideoPage from "./VidePage";
 
 export default function HomePage({information}) {
     const Cards = information.map(item=> {
