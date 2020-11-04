@@ -4,8 +4,11 @@ import React from "react";
 // Components
 import Header from "../organisms/Header";
 
-export default function VideoPage({ information }) {
-   
+export default function VideoPage({ match, information }) {
+   console.log("Video Page component");
+   console.log("match", match);
+   console.log("match:  ", match.params.id);
+   const matchId = match.params.id
     const {
         videoURL,
         title,
@@ -15,7 +18,7 @@ export default function VideoPage({ information }) {
         channelName,
         suscribers,
         description,
-      } = information;
+      } = information[matchId];
     return (
         <div className="video-page">
             <Header />

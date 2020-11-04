@@ -29,8 +29,8 @@ function App() {
                   render={ () => <HomePage information ={information} />}
                   />
                 <Route 
-                  path="/video" 
-                  render ={ () => <VideoPage information = {information[0]} />}
+                  path="/video/:id" 
+                  render ={ ({match}) => <VideoPage match ={match} information={information} />}
                 />
             </Switch>
           </div>
